@@ -1,23 +1,30 @@
 {
-  "name": "smartseason-backend",
+  "name": "intro-nodejs",
   "version": "1.0.0",
-  "main": "src/server.js",
+  "description": "a tutorial for intro to backend",
+  "main": "backend/src/index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "node backend/src/index.js",
+    "dev": "nodemon backend/src/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewSmoke38/intro-to-backend.git"
+  },
+  "author": "Charles Mwangi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewSmoke38/intro-to-backend/issues"
+  },
+  "homepage": "https://github.com/NewSmoke38/intro-to-backend#readme",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.22.1",
-    "express-validator": "^7.0.1",
-    "jsonwebtoken": "^9.0.2",
-    "mysql": "^2.18.1",
-    "mysql2": "^3.6.5"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
+    "bcrypt": "^6.0.0",
+    "config": "^4.4.1",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.3",
+    "mysql2": "^3.22.2",
+    "nodemon": "^3.1.10"
   }
 }
